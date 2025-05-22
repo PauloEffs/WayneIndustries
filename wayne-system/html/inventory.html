@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayne System - Inventário</title>
+    <link rel="stylesheet" href="../../wayne-industries/css/styles.css">
+    <link rel="stylesheet" href="../css/wayne-system.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3094/3094830.png" type="image/png">
+</head>
+<body class="wayne-system-body">
+    <div class="overlay" id="overlay"></div>
+    
+    <header class="system-header">
+        <div class="system-nav">
+            <div class="logo-container">
+                <i class="fas fa-shield-alt"></i>
+                <h1>WAYNE SYSTEM</h1>
+            </div>
+            <nav class="system-navigation">
+                <ul class="nav-links">
+                    <li><a href="waynesystem.html" class="nav-link">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </a></li>
+                    <li><a href="security.html" class="nav-link">
+                        <i class="fas fa-shield-alt"></i> Segurança
+                    </a></li>
+                    <li><a href="initiatives.html" class="nav-link">
+                        <i class="fas fa-rocket"></i> Iniciativas
+                    </a></li>
+                    <li><a href="inventory.html" class="nav-link active">
+                        <i class="fas fa-boxes"></i> Inventário
+                    </a></li>
+                </ul>
+                <div class="exit-container">
+                    <a href="../../wayne-industries/html/index.html" class="exit-btn">
+                        <i class="fas fa-sign-out-alt"></i> Sair
+                    </a>
+                </div>
+            </nav>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="system-main">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-boxes"></i> Inventário Wayne</h2>
+                <p>Gerenciamento de equipamentos, veículos e dispositivos de segurança</p>
+            </div>
+
+            <div class="inventory-controls">
+                <div class="inventory-tabs">
+                    <button class="tab-btn active" data-category="all">
+                        <i class="fas fa-th"></i> Todos
+                    </button>
+                    <button class="tab-btn" data-category="equipment">
+                        <i class="fas fa-tools"></i> Equipamentos
+                    </button>
+                    <button class="tab-btn" data-category="vehicles">
+                        <i class="fas fa-car"></i> Veículos
+                    </button>
+                    <button class="tab-btn" data-category="security">
+                        <i class="fas fa-shield-alt"></i> Segurança
+                    </button>
+                </div>
+                <button class="add-item-btn" id="addItemBtn">
+                    <i class="fas fa-plus"></i> Adicionar Item
+                </button>
+            </div>
+
+            <div class="inventory-grid" id="inventoryGrid">
+                <!-- Items serão populados pelo JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal para Adicionar/Editar Item -->
+    <div class="modal" id="itemModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Adicionar Item</h3>
+                <button class="close-modal" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="itemForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="itemName">Nome do Item</label>
+                            <input type="text" id="itemName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="itemCategory">Categoria</label>
+                            <select id="itemCategory" required>
+                                <option value="equipment">Equipamento</option>
+                                <option value="vehicles">Veículo</option>
+                                <option value="security">Segurança</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="itemQuantity">Quantidade</label>
+                            <input type="number" id="itemQuantity" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="itemStatus">Status</label>
+                            <select id="itemStatus" required>
+                                <option value="operational">Operacional</option>
+                                <option value="maintenance">Manutenção</option>
+                                <option value="inactive">Inativo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemLocation">Localização</label>
+                        <input type="text" id="itemLocation" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemDescription">Descrição</label>
+                        <textarea id="itemDescription" rows="3"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" id="cancelBtn">Cancelar</button>
+                        <button type="submit" class="btn-primary">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/inventory.js"></script>
+</body>
+</html>

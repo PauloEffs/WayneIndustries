@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayne System - Centro de Segurança</title>
+    <link rel="stylesheet" href="../../wayne-industries/css/styles.css">
+    <link rel="stylesheet" href="../css/wayne-system.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3094/3094830.png" type="image/png">
+</head>
+<body class="wayne-system-body">
+    <div class="overlay" id="overlay"></div>
+    
+    <header class="system-header">
+        <div class="system-nav">
+            <div class="logo-container">
+                <i class="fas fa-shield-alt"></i>
+                <h1>WAYNE SYSTEM</h1>
+            </div>
+            <nav class="system-navigation">
+                <ul class="nav-links">
+                    <li><a href="waynesystem.html" class="nav-link">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </a></li>
+                    <li><a href="security.html" class="nav-link active">
+                        <i class="fas fa-shield-alt"></i> Segurança
+                    </a></li>
+                    <li><a href="initiatives.html" class="nav-link">
+                        <i class="fas fa-rocket"></i> Iniciativas
+                    </a></li>
+                    <li><a href="inventory.html" class="nav-link">
+                        <i class="fas fa-boxes"></i> Inventário
+                    </a></li>
+                </ul>
+                <div class="exit-container">
+                    <a href="../../wayne-industries/html/index.html" class="exit-btn">
+                        <i class="fas fa-sign-out-alt"></i> Sair
+                    </a>
+                </div>
+            </nav>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="system-main">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-shield-alt"></i> Centro de Segurança</h2>
+                <p>Estatísticas de criminalidade e monitoramento de Gotham City</p>
+            </div>
+
+            <div class="security-grid">
+                <div class="crime-stats">
+                    <h3>Estatísticas de Criminalidade</h3>
+                    <div class="stats-cards">
+                        <div class="crime-card decrease">
+                            <div class="crime-icon">
+                                <i class="fas fa-chart-line-down"></i>
+                            </div>
+                            <div class="crime-data">
+                                <h4>Crimes Gerais</h4>
+                                <span class="crime-number">-23%</span>
+                                <p>Em relação ao mês anterior</p>
+                            </div>
+                        </div>
+
+                        <div class="crime-card decrease">
+                            <div class="crime-icon">
+                                <i class="fas fa-mask"></i>
+                            </div>
+                            <div class="crime-data">
+                                <h4>Crimes Organizados</h4>
+                                <span class="crime-number">-45%</span>
+                                <p>Em relação ao mês anterior</p>
+                            </div>
+                        </div>
+
+                        <div class="crime-card increase">
+                            <div class="crime-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="crime-data">
+                                <h4>Furtos de Veículos</h4>
+                                <span class="crime-number">+8%</span>
+                                <p>Em relação ao mês anterior</p>
+                            </div>
+                        </div>
+
+                        <div class="crime-card stable">
+                            <div class="crime-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="crime-data">
+                                <h4>Invasões</h4>
+                                <span class="crime-number">0%</span>
+                                <p>Em relação ao mês anterior</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="security-map">
+                    <h3>Mapa de Segurança de Gotham</h3>
+                    <div class="map-container">
+                        <div class="gotham-map">
+                            <div class="district safe" data-district="Financial">
+                                <span>Distrito Financeiro</span>
+                                <div class="safety-level safe">Seguro</div>
+                            </div>
+                            <div class="district warning" data-district="Industrial">
+                                <span>Distrito Industrial</span>
+                                <div class="safety-level warning">Atenção</div>
+                            </div>
+                            <div class="district safe" data-district="Residential">
+                                <span>Área Residencial</span>
+                                <div class="safety-level safe">Seguro</div>
+                            </div>
+                            <div class="district danger" data-district="Narrows">
+                                <span>O Estreito</span>
+                                <div class="safety-level danger">Alto Risco</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção adicional: Relatórios de Segurança -->
+            <div class="security-reports">
+                <h3>Relatórios de Segurança</h3>
+                <div class="reports-grid">
+                    <div class="report-card">
+                        <div class="report-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="report-info">
+                            <h4>Relatório Mensal</h4>
+                            <p>Análise completa da segurança de Gotham - Janeiro 2025</p>
+                            <span class="report-date">Atualizado: 22/01/2025</span>
+                        </div>
+                        <button class="report-btn">
+                            <i class="fas fa-download"></i>
+                        </button>
+                    </div>
+
+                    <div class="report-card">
+                        <div class="report-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="report-info">
+                            <h4>Análise de Tendências</h4>
+                            <p>Previsões de segurança baseadas em IA para os próximos 3 meses</p>
+                            <span class="report-date">Atualizado: 20/01/2025</span>
+                        </div>
+                        <button class="report-btn">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="report-card">
+                        <div class="report-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="report-info">
+                            <h4>Alertas Ativos</h4>
+                            <p>3 alertas de segurança requerem atenção imediata</p>
+                            <span class="report-date">Atualizado: 22/01/2025</span>
+                        </div>
+                        <button class="report-btn urgent">
+                            <i class="fas fa-bell"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Patrulhamento em Tempo Real -->
+            <div class="patrol-status">
+                <h3>Status de Patrulhamento</h3>
+                <div class="patrol-grid">
+                    <div class="patrol-unit">
+                        <div class="unit-header">
+                            <h4>Unidade Alpha</h4>
+                            <span class="unit-status active">Ativa</span>
+                        </div>
+                        <div class="unit-details">
+                            <p><strong>Localização:</strong> Distrito Financeiro</p>
+                            <p><strong>Última Atualização:</strong> 2 min atrás</p>
+                            <p><strong>Efetivo: 55 </strong></p>
+                            <p><strong>Próximo Checkpoint:</strong> Wayne Tower</p>
+                        </div>
+                        <div class="unit-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                            <span>75% da rota concluída</span>
+                        </div>
+                    </div>
+
+                    <div class="patrol-unit">
+                        <div class="unit-header">
+                            <h4>Unidade Bravo</h4>
+                            <span class="unit-status active">Ativa</span>
+                        </div>
+                        <div class="unit-details">
+                            <p><strong>Localização:</strong> The Narrows</p>
+                            <p><strong>Última Atualização:</strong> 1 min atrás</p>
+                            <p><strong>Efetivo: 120 </strong></p>
+                            <p><strong>Próximo Checkpoint:</strong> Central Park</p>
+                        </div>
+                        <div class="unit-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%"></div>
+                            </div>
+                            <span>45% da rota concluída</span>
+                        </div>
+                    </div>
+
+                    <div class="patrol-unit">
+                        <div class="unit-header">
+                            <h4>Unidade Charlie</h4>
+                            <span class="unit-status maintenance">Manutenção</span>
+                        </div>
+                        <div class="unit-details">
+                            <p><strong>Localização:</strong> Base Central</p>
+                            <p><strong>Última Atualização:</strong> 15 min atrás</p>
+                            <p><strong>Efetivo: 48 </strong></p>
+                            <p><strong>Status:</strong> Manutenção preventiva</p>
+                        </div>
+                        <div class="unit-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0%"></div>
+                            </div>
+                            <span>Fora de serviço</span> 
+                        </div>
+                    </div>
+
+                    <div class="patrol-unit">
+                        <div class="unit-header">
+                            <h4>Unidade Delta</h4>
+                            <span class="unit-status active">Ativa</span>
+                        </div>
+                        <div class="unit-details">
+                            <p><strong>Localização:</strong> Distrito Residencial</p>
+                            <p><strong>Última Atualização:</strong> 10 min atrás</p>
+                            <p><strong>Efetivo: 70 </strong></p>
+                            <p><strong>Próximo Checkpoint:</strong> Arkham Asylum</p>
+                        </div>
+                        <div class="unit-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                            <span>80% da rota concluída</span> 
+                        </div>
+                    </div>
+
+                      <div class="patrol-unit">
+                        <div class="unit-header">
+                            <h4>Unidade Eco</h4>
+                            <span class="unit-status active">Ativa</span>
+                        </div>
+                        <div class="unit-details">
+                            <p><strong>Localização:</strong> Distrito Industrial</p>
+                            <p><strong>Última Atualização:</strong> 8 min atrás</p>
+                            <p><strong>Efetivo: 35 </strong></p>
+                            <p><strong>Próximo Checkpoint:</strong> West Shopping</p>
+                        </div>
+                        <div class="unit-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%"></div>
+                            </div>
+                            <span>60% da rota concluída</span> 
+                        </div>
+                    </div>
+
+                     <div class="patrol-unit">
+                        <div class="unit-header">
+                            <h4>Unidade Foxtrot</h4>
+                            <span class="unit-status active">Ativa</span>
+                        </div>
+                        <div class="unit-details">
+                            <p><strong>Localização:</strong> Distrito Financeiro</p>
+                            <p><strong>Última Atualização:</strong> 18 min atrás</p>
+                            <p><strong>Efetivo: 25 </strong></p>
+                            <p><strong>Próximo Checkpoint:</strong> Gotham Trade Center</p>
+                        </div>
+                        <div class="unit-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                            <span>70% da rota concluída</span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/security.js"></script>
+</body>
+</html>

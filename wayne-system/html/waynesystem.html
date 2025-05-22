@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayne System - Sistema Interno</title>
+    <link rel="stylesheet" href="../../wayne-industries/css/styles.css">
+    <link rel="stylesheet" href="../css/wayne-system.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3094/3094830.png" type="image/png">
+</head>
+<body class="wayne-system-body">
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- Header do Sistema -->
+    <header class="system-header">
+        <div class="system-nav">
+            <div class="logo-container">
+                <i class="fas fa-shield-alt"></i>
+                <h1>WAYNE SYSTEM</h1>
+            </div>
+            <nav class="system-navigation">
+                <ul class="nav-links">
+                    <li><a href="waynesystem.html" class="nav-link active">
+                        <i class="fas fa-tachometer-alt"></i> Controle Principal
+                    </a></li>
+                    <li><a href="security.html" class="nav-link">
+                        <i class="fas fa-shield-alt"></i> Segurança
+                    </a></li>
+                    <li><a href="initiatives.html" class="nav-link">
+                        <i class="fas fa-rocket"></i> Iniciativas
+                    </a></li>
+                    <li><a href="inventory.html" class="nav-link">
+                        <i class="fas fa-boxes"></i> Inventário
+                    </a></li>
+                </ul>
+                <div class="exit-container">
+                    <a href="../../wayne-industries/html/index.html" class="exit-btn">
+                        <i class="fas fa-sign-out-alt"></i> Sair
+                    </a>
+                </div>
+            </nav>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="system-main">
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="system-section active">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-tachometer-alt"></i> Controle Principal</h2>
+                    <p>Monitoramento em tempo real dos sistemas Wayne</p>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- Status Cards -->
+                    <div class="status-cards">
+                        <div class="status-card operational">
+                            <div class="status-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="status-info">
+                                <h3>Sistemas</h3>
+                                <p>Operacional</p>
+                                <span class="status-percentage">98.7%</span>
+                            </div>
+                        </div>
+
+                        <div class="status-card warning">
+                            <div class="status-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="status-info">
+                                <h3>Alertas</h3>
+                                <p>3 Ativos</p>
+                                <span class="status-percentage">Pouco preocupante</span>
+                            </div>
+                        </div>
+
+                        <div class="status-card success">
+                            <div class="status-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="status-info">
+                                <h3>Segurança</h3>
+                                <p>Ativa</p>
+                                <span class="status-percentage">100%</span>
+                            </div>
+                        </div>
+
+                        <div class="status-card info">
+                            <div class="status-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="status-info">
+                                <h3>Recursos</h3>
+                                <p>127 Itens</p>
+                                <span class="status-percentage">Ativo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="quick-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-city"></i>
+                            <h4>Gotham City</h4>
+                            <p>Área Monitorada: 100%</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <h4>População Protegida</h4>
+                            <p>8.4M Cidadãos</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Eficiência</h4>
+                            <p>+12% Este Mês</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Section -->
+        <section id="security" class="system-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-shield-alt"></i> Centro de Segurança</h2>
+                    <p>Estatísticas de criminalidade e monitoramento de Gotham City</p>
+                </div>
+
+                <div class="security-grid">
+                    <!-- Crime Statistics -->
+                    <div class="crime-stats">
+                        <h3>Estatísticas de Criminalidade</h3>
+                        <div class="stats-cards">
+                            <div class="crime-card decrease">
+                                <div class="crime-icon">
+                                    <i class="fas fa-chart-line-down"></i>
+                                </div>
+                                <div class="crime-data">
+                                    <h4>Crimes Gerais</h4>
+                                    <span class="crime-number">-23%</span>
+                                    <p>vs. mês anterior</p>
+                                </div>
+                            </div>
+
+                            <div class="crime-card decrease">
+                                <div class="crime-icon">
+                                    <i class="fas fa-mask"></i>
+                                </div>
+                                <div class="crime-data">
+                                    <h4>Crimes Organizados</h4>
+                                    <span class="crime-number">-45%</span>
+                                    <p>vs. mês anterior</p>
+                                </div>
+                            </div>
+
+                            <div class="crime-card increase">
+                                <div class="crime-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="crime-data">
+                                    <h4>Furtos de Veículos</h4>
+                                    <span class="crime-number">+8%</span>
+                                    <p>vs. mês anterior</p>
+                                </div>
+                            </div>
+
+                            <div class="crime-card stable">
+                                <div class="crime-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="crime-data">
+                                    <h4>Invasões</h4>
+                                    <span class="crime-number">0%</span>
+                                    <p>vs. mês anterior</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security Map -->
+                    <div class="security-map">
+                        <h3>Mapa de Segurança de Gotham</h3>
+                        <div class="map-container">
+                            <div class="gotham-map">
+                                <div class="district safe" data-district="Financial">
+                                    <span>Distrito Financeiro</span>
+                                    <div class="safety-level safe">Seguro</div>
+                                </div>
+                                <div class="district warning" data-district="Industrial">
+                                    <span>Distrito Industrial</span>
+                                    <div class="safety-level warning">Atenção</div>
+                                </div>
+                                <div class="district safe" data-district="Residential">
+                                    <span>Área Residencial</span>
+                                    <div class="safety-level safe">Seguro</div>
+                                </div>
+                                <div class="district danger" data-district="Narrows">
+                                    <span>The Narrows</span>
+                                    <div class="safety-level danger">Alto Risco</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Initiatives Section -->
+        <section id="initiatives" class="system-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-rocket"></i> Iniciativas de Segurança</h2>
+                    <p>Projetos ativos da Wayne Industries para melhorar a segurança de Gotham</p>
+                </div>
+
+                <div class="initiatives-grid">
+                    <div class="initiative-card">
+                        <div class="initiative-image">
+                            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300&q=80" alt="Sistema de Vigilância">
+                        </div>
+                        <div class="initiative-content">
+                            <h3>Sistema de Vigilância Avançado</h3>
+                            <p>Rede de câmeras inteligentes com reconhecimento facial e análise comportamental em tempo real.</p>
+                            <div class="initiative-status">
+                                <span class="status-badge active">Ativo</span>
+                                <span class="coverage">Cobertura: 95%</span>
+                            </div>
+                            <div class="initiative-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="initiative-card">
+                        <div class="initiative-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300&q=80" alt="Patrulhamento Inteligente">
+                        </div>
+                        <div class="initiative-content">
+                            <h3>Patrulhamento Inteligente</h3>
+                            <p>Sistema de roteamento otimizado para forças de segurança baseado em algoritmos preditivos.</p>
+                            <div class="initiative-status">
+                                <span class="status-badge active">Ativo</span>
+                                <span class="coverage">Eficiência: +34%</span>
+                            </div>
+                            <div class="initiative-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 87%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="initiative-card">
+                        <div class="initiative-image">
+                            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300&q=80" alt="Centro de Emergência">
+                        </div>
+                        <div class="initiative-content">
+                            <h3>Centro de Resposta Rápida</h3>
+                            <p>Central integrada de emergências com tempo de resposta médio de 3 minutos em toda Gotham.</p>
+                            <div class="initiative-status">
+                                <span class="status-badge active">Ativo</span>
+                                <span class="coverage">Tempo: 3min</span>
+                            </div>
+                            <div class="initiative-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="initiative-card">
+                        <div class="initiative-image">
+                            <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300&q=80" alt="Programa Social">
+                        </div>
+                        <div class="initiative-content">
+                            <h3>Programa de Reintegração</h3>
+                            <p>Iniciativa social para educação e capacitação profissional em áreas de risco.</p>
+                            <div class="initiative-status">
+                                <span class="status-badge development">Desenvolvimento</span>
+                                <span class="coverage">Beneficiados: 2.4K</span>
+                            </div>
+                            <div class="initiative-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 68%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inventory Section -->
+        <section id="inventory" class="system-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-boxes"></i> Inventário Wayne</h2>
+                    <p>Gerenciamento de equipamentos, veículos e dispositivos de segurança</p>
+                </div>
+
+                <div class="inventory-controls">
+                    <div class="inventory-tabs">
+                        <button class="tab-btn active" data-category="all">
+                            <i class="fas fa-th"></i> Todos
+                        </button>
+                        <button class="tab-btn" data-category="equipment">
+                            <i class="fas fa-tools"></i> Equipamentos
+                        </button>
+                        <button class="tab-btn" data-category="vehicles">
+                            <i class="fas fa-car"></i> Veículos
+                        </button>
+                        <button class="tab-btn" data-category="security">
+                            <i class="fas fa-shield-alt"></i> Segurança
+                        </button>
+                    </div>
+                    <button class="add-item-btn" id="addItemBtn">
+                        <i class="fas fa-plus"></i> Adicionar Item
+                    </button>
+                </div>
+
+                <div class="inventory-grid" id="inventoryGrid">
+                    <!-- Items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Add/Edit Item -->
+    <div class="modal" id="itemModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Adicionar Item</h3>
+                <button class="close-modal" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="itemForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="itemName">Nome do Item</label>
+                            <input type="text" id="itemName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="itemCategory">Categoria</label>
+                            <select id="itemCategory" required>
+                                <option value="equipment">Equipamento</option>
+                                <option value="vehicles">Veículo</option>
+                                <option value="security">Segurança</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="itemQuantity">Quantidade</label>
+                            <input type="number" id="itemQuantity" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="itemStatus">Status</label>
+                            <select id="itemStatus" required>
+                                <option value="operational">Operacionais</option>
+                                <option value="maintenance">Manutenção</option>
+                                <option value="inactive">Inativo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemLocation">Localização</label>
+                        <input type="text" id="itemLocation" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemDescription">Descrição</label>
+                        <textarea id="itemDescription" rows="3"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" id="cancelBtn">Cancelar</button>
+                        <button type="submit" class="btn-primary">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
